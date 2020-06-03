@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Cerca cocktail</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  </head>
+  <body>
+
+    <form class="cerca-cocktail" action="index.html" method="post">
+      <label class="cerca_label" for="nome">Cerca un cocktail: </label>
+      <input class="cerca_input" type="search" name="cerca" value="">
+      <select class="cerca_opzioni" id="cercaPer" name="Cerca per">
+        <option value="NomeCocktail" selected>Nome cocktail</option>
+        <option value="NomeIngrediente">Nome Ingrediente</option>
+        <option value="Iniziale">Lettera iniziale</option>
+      </select>
+      <button class="submit" type="submit" name="invio"> 🔎</button>
+    </form>
+
+
+
+    <script>
+      require('./renderer.js')
+    </script>
+
+  </body>
+</html>
